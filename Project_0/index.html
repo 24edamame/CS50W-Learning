@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Poogle Search</title>
+        <style>
+            .centered {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+
+            .options {
+                text-align: right;
+                float: right;
+                width: 100%;
+            }
+
+            .option {
+                margin: 5px;
+                float: right;
+                text-align: center;
+            }
+
+            #bar {
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+            }
+
+            #search {
+                margin: auto;
+                width: 50%;
+                justify-content: center;
+                display: flex;
+            }
+
+            input[type=text], button {
+                border-radius: 15px;
+                border: 2px solid #7a7676;
+                background-color: white;
+                padding: 10px;
+                margin: 10px;
+                text-align: center;
+                width: 80%;
+            }
+
+            button:hover, input[type=button]:hover {
+                background-color: #7a7676;
+                color: white;
+            }
+
+            input[type=button] {
+                margin: 10px;
+                padding: 5px;
+                border-radius: 10px;
+                border: 1px solid #7a7676;
+                background-color: white;
+            }
+            
+            h3 {
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
+            
+            h6 {
+                font-family: Arial, sans-serif;
+                color:#7a7676;
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            td {
+                text-align: center;
+            }
+            
+            table {
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                color:#7a7676;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="options">
+            <span>
+                <div class="option">
+                    <a href="imsearch.html"><h6>Poogle Images</h6></a>
+                </div>
+                <div class="option">
+                    <a href="advsearch.html"><h6>Advanced Search</h6></a>
+                </div>
+            </span>
+        </div>
+
+        <div>
+            <img class="centered" src="Poogle_Logo.jpg" alt="Poogle Logo">
+        </div>
+
+        <h3>A slightly worse version of Google.</h3>
+
+        <form action="https://www.google.com/search" method="GET">
+            <div id="bar">
+                <center>
+                    <input type="text" name="q" placeholder="Find what find?">
+                </center>
+            </div>
+            <div id="search">
+                <button type="submit" style="width:auto;">Search Summore</button>
+                <button type="submit" value="1" style="width:auto;" name="btnI">Heng Ong Huat</button>
+            </div>
+        </form>
+    </body>
+</html>
